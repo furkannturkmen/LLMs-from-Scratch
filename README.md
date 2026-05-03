@@ -27,7 +27,7 @@ Plenty of things I implemented are wrong or suboptimal. I left them as-is when t
 
 A short list, in roughly the order I want to tackle them.
 
-**Knowledge distillation.** Specifically soft distillation — KL on the teacher's full logits with a temperature, not just hard labels. I want to take a competent ~7B teacher and see how small a student can get before the wheels come off. Curious what temperature actually does to the gradient signal in practice vs. what the original Hinton paper claims.
+**Knowledge distillation.** Specifically soft distillation — KL on the teacher's full logits with a temperature, not just hard labels. I want to take a competent ~27B teacher and see how small a student (qwen 3.5 2B) can get before the wheels come off. Curious what temperature actually does to the gradient signal in practice vs. what the original Hinton paper claims.
 
 **Unsloth.** I've been doing everything in vanilla PyTorch / HF, which is great for understanding and terrible for actually training anything bigger than toys. Unsloth's Triton kernels are supposed to make fine-tuning a 7B–8B model on a single consumer GPU realistic. Plan: replicate one of my GRPO experiments at a serious scale, benchmark it honestly against the slow version.
 
