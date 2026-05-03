@@ -7,7 +7,7 @@ Each notebook is one concept, top to bottom, with the math and the code side by 
 ## What's here
 
 - **MoE.ipynb** — Mixture of Experts. Top-k gating, sparse routing, load balancing loss. Built a tiny MoE layer and watched the routing actually specialize, which was satisfying.
-- **QuantizationFromScratch.ipynb** — symmetric and asymmetric quantization, INT8 and INT4, calibration. The interesting part was seeing exactly where accuracy starts to break and why.
+- **QuantizationFromScratch.ipynb** — symmetric and asymmetric quantization, INT8. Next plan for this -> interesting part was seeing exactly where accuracy starts to break and why.
 - **GRPO.ipynb** — Group Relative Policy Optimization, the RL algorithm DeepSeek used. No value model, just group-relative advantages. Implemented the loss from the paper and trained on a toy reasoning task.
 
 ## How I got here
