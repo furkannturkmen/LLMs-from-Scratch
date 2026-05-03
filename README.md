@@ -35,4 +35,4 @@ A short list, in roughly the order I want to tackle them.
 
 ## Running
 
-Nothing fancy. Each notebook is standalone.
+Nothing fancy. Each notebook is self sufficent.
